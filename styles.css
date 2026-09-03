@@ -1,13 +1,14 @@
 /* ============================================
    styles.css – Portafolio Néstor Ramos
+   Estilo oscuro + colores vivos
    ============================================ */
 
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
   --whatsapp: #25d366;
   --radius: 1rem;
-  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.12);
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -19,26 +20,35 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f172a; /* fondo oscuro base */
 }
 
-/* Nav con sombra al hacer scroll */
+/* Nav */
+nav {
+  background-color: rgba(15, 23, 42, 0.92) !important;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+}
+
 nav.scrolled {
-  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 25px -4px rgba(0, 0, 0, 0.5);
 }
 
 /* Tarjetas de servicios */
 .service-card {
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
 }
 
 .service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-soft);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
+  border-color: #475569 !important;
 }
 
 .service-card.expanded {
   transform: scale(1.02);
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
 }
 
 .service-details {
@@ -56,17 +66,25 @@ nav.scrolled {
 /* Filtros */
 .filter-btn {
   transition: all 0.25s ease;
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #334155;
+}
+
+.filter-btn:hover {
+  background-color: #334155 !important;
 }
 
 .filter-btn.active {
-  background-color: var(--primary) !important;
+  background-color: #3b82f6 !important;
   color: white !important;
-  box-shadow: 0 4px 14px -3px rgba(37, 99, 235, 0.45);
+  border-color: #3b82f6 !important;
+  box-shadow: 0 4px 18px -3px rgba(59, 130, 246, 0.55);
 }
 
 /* Calculadora */
 .calc-check:checked + div span:first-child {
-  color: var(--primary);
+  color: #60a5fa;
   font-weight: 600;
 }
 
@@ -97,7 +115,7 @@ nav.scrolled {
 /* Botón flotante WhatsApp */
 .floating-whatsapp {
   animation: pulse-whatsapp 2.2s infinite;
-  box-shadow: 0 8px 25px -5px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 25px -5px rgba(37, 211, 102, 0.55);
 }
 
 .floating-whatsapp:hover {
@@ -114,24 +132,16 @@ nav.scrolled {
 /* Accesibilidad */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid #60a5fa;
   outline-offset: 3px;
 }
 
-/* Dark mode */
-.dark .service-card:hover {
-  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.4);
-}
-
-.dark .filter-btn.active {
-  box-shadow: 0 4px 14px -3px rgba(59, 130, 246, 0.5);
-}
-
-/* Gradientes sutiles */
-.bg-primary-600 {
-  background-image: linear-gradient(135deg, #2563eb, #1d4ed8);
-}
-
-.bg-green-500 {
-  background-image: linear-gradient(135deg, #22c55e, #16a34a);
+/* Foto de perfil */
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.25);
 }
