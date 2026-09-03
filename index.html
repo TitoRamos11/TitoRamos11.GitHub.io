@@ -24,10 +24,6 @@
               700: '#1d4ed8',
               800: '#1e40af',
               900: '#1e3a8a',
-            },
-            accent: {
-              400: '#fbbf24',
-              500: '#f59e0b',
             }
           }
         }
@@ -35,27 +31,23 @@
     }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+<body class="bg-slate-950 text-slate-100 transition-colors duration-300">
 
   <!-- NAV -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#inicio" class="font-bold text-xl text-primary-700 dark:text-primary-400 flex items-center gap-2">
+      <a href="#inicio" class="font-bold text-xl text-blue-400 flex items-center gap-2">
         <i class="fas fa-calculator"></i>
         <span>Néstor Ramos</span>
       </a>
-      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="#servicios" class="hover:text-primary-600 transition">Servicios</a>
-        <a href="#calculadora" class="hover:text-primary-600 transition">Calculadora</a>
-        <a href="#proceso" class="hover:text-primary-600 transition">Proceso</a>
-        <a href="#faq" class="hover:text-primary-600 transition">FAQ</a>
-        <a href="#contacto" class="hover:text-primary-600 transition">Contacto</a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#servicios" class="hover:text-blue-400 transition">Servicios</a>
+        <a href="#calculadora" class="hover:text-blue-400 transition">Calculadora</a>
+        <a href="#proceso" class="hover:text-blue-400 transition">Proceso</a>
+        <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+        <a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
       </div>
       <div class="flex items-center gap-3">
-        <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Cambiar tema">
-          <i class="fas fa-moon dark:hidden"></i>
-          <i class="fas fa-sun hidden dark:inline"></i>
-        </button>
         <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios%20contables" 
            target="_blank"
            class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition">
@@ -67,47 +59,57 @@
   </nav>
 
   <!-- HERO -->
-  <section id="inicio" class="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br from-primary-50 to-white dark:from-slate-800 dark:to-slate-900">
+  <section id="inicio" class="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="inline-block bg-primary-100 dark:bg-primary-900/40 text-primary-700 dark:text-primary-300 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+        <span class="inline-block bg-blue-500/20 text-blue-400 text-sm font-semibold px-3 py-1 rounded-full mb-4 border border-blue-500/30">
           Contador Público
         </span>
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
           Contabilidad clara.<br>
-          <span class="text-primary-600 dark:text-primary-400">Decisiones seguras.</span>
+          <span class="text-blue-400">Decisiones seguras.</span>
         </h1>
-        <p class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-lg">
+        <p class="text-lg text-slate-400 mb-8 max-w-lg">
           Te ayudo a tener tus finanzas en orden, cumplir con el fisco y tomar mejores decisiones de negocio. Atención personalizada y respuesta rápida por WhatsApp.
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="https://wa.me/573158394665?text=Hola%2C%20quiero%20agendar%20una%20consulta" 
              target="_blank"
-             class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 shadow-lg shadow-primary-500/30 transition">
+             class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 shadow-lg shadow-blue-500/30 transition">
             <i class="fab fa-whatsapp text-xl"></i>
             Hablar por WhatsApp
           </a>
-          <a href="#servicios" class="border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 px-6 py-3 rounded-xl font-semibold transition">
+          <a href="#servicios" class="border-2 border-blue-500 text-blue-400 hover:bg-blue-500/10 px-6 py-3 rounded-xl font-semibold transition">
             Ver servicios
           </a>
         </div>
       </div>
+
+      <!-- Tarjeta con foto -->
       <div class="relative">
-        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-8 border border-slate-100 dark:border-slate-700">
+        <div class="bg-slate-900 rounded-2xl shadow-2xl p-8 border border-slate-700">
           <div class="flex items-center gap-4 mb-6">
-            <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-2xl text-primary-600">
+            <!-- FOTO DE PERFIL -->
+            <img 
+              src="foto.jpg" 
+              alt="Néstor Ramos" 
+              class="profile-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <!-- Fallback si no hay foto -->
+            <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-2xl text-white" style="display:none;">
               <i class="fas fa-user-tie"></i>
             </div>
             <div>
-              <h3 class="font-bold text-lg">Néstor Ramos</h3>
-              <p class="text-sm text-slate-500 dark:text-slate-400">Contador Público</p>
+              <h3 class="font-bold text-lg text-white">Néstor Ramos</h3>
+              <p class="text-sm text-slate-400">Contador Público</p>
             </div>
           </div>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Respuesta en menos de 2 horas</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Precios transparentes</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Cumplimiento fiscal garantizado</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Asesoría personalizada</li>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-400"></i> Respuesta en menos de 2 horas</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-400"></i> Precios transparentes</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-400"></i> Cumplimiento fiscal garantizado</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-400"></i> Asesoría personalizada</li>
           </ul>
         </div>
       </div>
@@ -115,222 +117,224 @@
   </section>
 
   <!-- SERVICIOS -->
-  <section id="servicios" class="py-20">
+  <section id="servicios" class="py-20 bg-slate-950">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Servicios Profesionales</h2>
-        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Soluciones contables y fiscales adaptadas a personas físicas, profesionistas y empresas.</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Servicios Profesionales</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">Soluciones contables y fiscales adaptadas a personas naturales, profesionistas y empresas.</p>
       </div>
 
       <!-- Filtros -->
       <div class="flex flex-wrap justify-center gap-3 mb-10">
-        <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium bg-primary-600 text-white" data-filter="all">Todos</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-200 dark:bg-slate-700 hover:bg-primary-100 dark:hover:bg-primary-900/40 transition" data-filter="contabilidad">Contabilidad</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-200 dark:bg-slate-700 hover:bg-primary-100 dark:hover:bg-primary-900/40 transition" data-filter="impuestos">Impuestos</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-200 dark:bg-slate-700 hover:bg-primary-100 dark:hover:bg-primary-900/40 transition" data-filter="auditoria">Auditoría</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-200 dark:bg-slate-700 hover:bg-primary-100 dark:hover:bg-primary-900/40 transition" data-filter="asesoria">Asesoría</button>
-        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-200 dark:bg-slate-700 hover:bg-primary-100 dark:hover:bg-primary-900/40 transition" data-filter="empresas">Empresas</button>
+        <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium" data-filter="all">Todos</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium" data-filter="contabilidad">Contabilidad</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium" data-filter="impuestos">Impuestos</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium" data-filter="auditoria">Auditoría</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium" data-filter="asesoria">Asesoría</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium" data-filter="empresas">Empresas</button>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-grid">
+
         <!-- Contabilidad -->
-        <div class="service-card bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 cursor-pointer" data-category="contabilidad">
-          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+        <div class="service-card rounded-2xl p-6 cursor-pointer" data-category="contabilidad">
+          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mb-4">
             <i class="fas fa-book text-xl"></i>
           </div>
-          <h3 class="font-bold text-lg mb-2">Contabilidad General</h3>
-          <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Llevamos tu contabilidad al día, registros, estados financieros y reportes mensuales.</p>
-          <div class="service-details hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300">
+          <h3 class="font-bold text-lg mb-2 text-white">Contabilidad General</h3>
+          <p class="text-slate-400 text-sm mb-4">Llevamos tu contabilidad al día, registros, estados financieros y reportes mensuales.</p>
+          <div class="service-details hidden mt-4 pt-4 border-t border-slate-700 text-sm text-slate-400">
             <ul class="space-y-2">
               <li>• Registro de operaciones</li>
               <li>• Balanza de comprobación</li>
               <li>• Estados financieros</li>
               <li>• Conciliaciones bancarias</li>
             </ul>
-            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Contabilidad%20General" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Contabilidad%20General" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-400 font-medium hover:underline">
               <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
             </a>
           </div>
-          <button class="toggle-details text-primary-600 text-sm font-medium mt-2 flex items-center gap-1">
+          <button class="toggle-details text-blue-400 text-sm font-medium mt-2 flex items-center gap-1">
             Ver más <i class="fas fa-chevron-down text-xs"></i>
           </button>
         </div>
 
         <!-- Impuestos -->
-        <div class="service-card bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 cursor-pointer" data-category="impuestos">
-          <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/40 rounded-xl flex items-center justify-center text-amber-600 mb-4">
+        <div class="service-card rounded-2xl p-6 cursor-pointer" data-category="impuestos">
+          <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 mb-4">
             <i class="fas fa-file-invoice-dollar text-xl"></i>
           </div>
-          <h3 class="font-bold text-lg mb-2">Impuestos y Declaraciones</h3>
-          <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Preparación y presentación de declaraciones mensuales, anuales y complementarias.</p>
-          <div class="service-details hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300">
+          <h3 class="font-bold text-lg mb-2 text-white">Impuestos y Declaraciones</h3>
+          <p class="text-slate-400 text-sm mb-4">Preparación y presentación de declaraciones mensuales, anuales y complementarias.</p>
+          <div class="service-details hidden mt-4 pt-4 border-t border-slate-700 text-sm text-slate-400">
             <ul class="space-y-2">
-              <li>• Declaración anual</li>
-              <li>• IVA, ISR, retenciones</li>
+              <li>• Declaración de renta</li>
+              <li>• IVA, retefuente, ICA</li>
               <li>• Declaraciones informativas</li>
               <li>• Corrección de errores</li>
             </ul>
-            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Impuestos%20y%20Declaraciones" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Impuestos%20y%20Declaraciones" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-400 font-medium hover:underline">
               <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
             </a>
           </div>
-          <button class="toggle-details text-primary-600 text-sm font-medium mt-2 flex items-center gap-1">
+          <button class="toggle-details text-blue-400 text-sm font-medium mt-2 flex items-center gap-1">
             Ver más <i class="fas fa-chevron-down text-xs"></i>
           </button>
         </div>
 
         <!-- Auditoría -->
-        <div class="service-card bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 cursor-pointer" data-category="auditoria">
-          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/40 rounded-xl flex items-center justify-center text-purple-600 mb-4">
+        <div class="service-card rounded-2xl p-6 cursor-pointer" data-category="auditoria">
+          <div class="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center text-violet-400 mb-4">
             <i class="fas fa-search-dollar text-xl"></i>
           </div>
-          <h3 class="font-bold text-lg mb-2">Auditoría</h3>
-          <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Revisiones internas y externas para detectar riesgos y mejorar controles.</p>
-          <div class="service-details hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300">
+          <h3 class="font-bold text-lg mb-2 text-white">Auditoría</h3>
+          <p class="text-slate-400 text-sm mb-4">Revisiones internas y externas para detectar riesgos y mejorar controles.</p>
+          <div class="service-details hidden mt-4 pt-4 border-t border-slate-700 text-sm text-slate-400">
             <ul class="space-y-2">
               <li>• Auditoría interna</li>
               <li>• Revisión de estados financieros</li>
               <li>• Evaluación de controles</li>
               <li>• Informes de hallazgos</li>
             </ul>
-            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Auditoría" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Auditoría" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-400 font-medium hover:underline">
               <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
             </a>
           </div>
-          <button class="toggle-details text-primary-600 text-sm font-medium mt-2 flex items-center gap-1">
+          <button class="toggle-details text-blue-400 text-sm font-medium mt-2 flex items-center gap-1">
             Ver más <i class="fas fa-chevron-down text-xs"></i>
           </button>
         </div>
 
         <!-- Asesoría Fiscal -->
-        <div class="service-card bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 cursor-pointer" data-category="asesoria">
-          <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/40 rounded-xl flex items-center justify-center text-emerald-600 mb-4">
+        <div class="service-card rounded-2xl p-6 cursor-pointer" data-category="asesoria">
+          <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 mb-4">
             <i class="fas fa-balance-scale text-xl"></i>
           </div>
-          <h3 class="font-bold text-lg mb-2">Asesoría Fiscal</h3>
-          <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Planeación fiscal estratégica para optimizar tu carga tributaria de forma legal.</p>
-          <div class="service-details hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300">
+          <h3 class="font-bold text-lg mb-2 text-white">Asesoría Fiscal</h3>
+          <p class="text-slate-400 text-sm mb-4">Planeación fiscal estratégica para optimizar tu carga tributaria de forma legal.</p>
+          <div class="service-details hidden mt-4 pt-4 border-t border-slate-700 text-sm text-slate-400">
             <ul class="space-y-2">
               <li>• Planeación fiscal</li>
-              <li>• Análisis de régimen fiscal</li>
+              <li>• Análisis de régimen tributario</li>
               <li>• Optimización de impuestos</li>
-              <li>• Atención a requerimientos</li>
+              <li>• Atención a requerimientos DIAN</li>
             </ul>
-            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Asesoría%20Fiscal" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Asesoría%20Fiscal" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-400 font-medium hover:underline">
               <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
             </a>
           </div>
-          <button class="toggle-details text-primary-600 text-sm font-medium mt-2 flex items-center gap-1">
+          <button class="toggle-details text-blue-400 text-sm font-medium mt-2 flex items-center gap-1">
             Ver más <i class="fas fa-chevron-down text-xs"></i>
           </button>
         </div>
 
         <!-- Constitución de Sociedades -->
-        <div class="service-card bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 cursor-pointer" data-category="empresas">
-          <div class="w-12 h-12 bg-rose-100 dark:bg-rose-900/40 rounded-xl flex items-center justify-center text-rose-600 mb-4">
+        <div class="service-card rounded-2xl p-6 cursor-pointer" data-category="empresas">
+          <div class="w-12 h-12 bg-rose-500/20 rounded-xl flex items-center justify-center text-rose-400 mb-4">
             <i class="fas fa-building text-xl"></i>
           </div>
-          <h3 class="font-bold text-lg mb-2">Constitución de Sociedades</h3>
-          <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Te acompañamos en la creación de tu empresa: sociedad anónima, S. de R.L., etc.</p>
-          <div class="service-details hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300">
+          <h3 class="font-bold text-lg mb-2 text-white">Constitución de Sociedades</h3>
+          <p class="text-slate-400 text-sm mb-4">Te acompañamos en la creación de tu empresa: SAS, Ltda., etc.</p>
+          <div class="service-details hidden mt-4 pt-4 border-t border-slate-700 text-sm text-slate-400">
             <ul class="space-y-2">
-              <li>• Trámites ante notario</li>
-              <li>• Inscripción en el RFC</li>
-              <li>• Alta en IMSS y registros</li>
+              <li>• Trámites ante Cámara de Comercio</li>
+              <li>• Inscripción en el RUT</li>
+              <li>• Alta en DIAN y seguridad social</li>
               <li>• Asesoría en estructura societaria</li>
             </ul>
-            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Constitución%20de%20Sociedades" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Constitución%20de%20Sociedades" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-400 font-medium hover:underline">
               <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
             </a>
           </div>
-          <button class="toggle-details text-primary-600 text-sm font-medium mt-2 flex items-center gap-1">
+          <button class="toggle-details text-blue-400 text-sm font-medium mt-2 flex items-center gap-1">
             Ver más <i class="fas fa-chevron-down text-xs"></i>
           </button>
         </div>
 
         <!-- Nómina -->
-        <div class="service-card bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 cursor-pointer" data-category="contabilidad">
-          <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-xl flex items-center justify-center text-indigo-600 mb-4">
+        <div class="service-card rounded-2xl p-6 cursor-pointer" data-category="contabilidad">
+          <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 mb-4">
             <i class="fas fa-users text-xl"></i>
           </div>
-          <h3 class="font-bold text-lg mb-2">Nómina y Recursos Humanos</h3>
-          <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Cálculo de nómina, timbrado, IMSS, INFONAVIT y obligaciones laborales.</p>
-          <div class="service-details hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300">
+          <h3 class="font-bold text-lg mb-2 text-white">Nómina y Recursos Humanos</h3>
+          <p class="text-slate-400 text-sm mb-4">Cálculo de nómina, aportes a seguridad social y obligaciones laborales.</p>
+          <div class="service-details hidden mt-4 pt-4 border-t border-slate-700 text-sm text-slate-400">
             <ul class="space-y-2">
-              <li>• Cálculo y timbrado de nómina</li>
-              <li>• Altas y bajas IMSS</li>
-              <li>• Cálculo de finiquitos</li>
-              <li>• Reportes de seguridad social</li>
+              <li>• Cálculo y liquidación de nómina</li>
+              <li>• Aportes a seguridad social</li>
+              <li>• Liquidación de prestaciones</li>
+              <li>• Reportes y certificados</li>
             </ul>
-            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Nómina" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+            <a href="https://wa.me/573158394665?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Nómina" target="_blank" class="mt-4 inline-flex items-center gap-2 text-green-400 font-medium hover:underline">
               <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
             </a>
           </div>
-          <button class="toggle-details text-primary-600 text-sm font-medium mt-2 flex items-center gap-1">
+          <button class="toggle-details text-blue-400 text-sm font-medium mt-2 flex items-center gap-1">
             Ver más <i class="fas fa-chevron-down text-xs"></i>
           </button>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- CALCULADORA -->
-  <section id="calculadora" class="py-20 bg-slate-100 dark:bg-slate-800/50">
+  <section id="calculadora" class="py-20 bg-slate-900/50">
     <div class="max-w-4xl mx-auto px-4">
       <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Calculadora de Honorarios</h2>
-        <p class="text-slate-600 dark:text-slate-300">Selecciona los servicios que necesitas y obtén un rango estimado de inversión mensual.</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Calculadora de Honorarios</h2>
+        <p class="text-slate-400">Selecciona los servicios que necesitas y obtén un rango estimado de inversión.</p>
       </div>
 
-      <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 md:p-8 border border-slate-200 dark:border-slate-700">
+      <div class="bg-slate-900 rounded-2xl shadow-xl p-6 md:p-8 border border-slate-700">
         <div class="space-y-4 mb-8" id="calculator-options">
-          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 cursor-pointer transition">
-            <input type="checkbox" value="1800" data-name="Contabilidad General" class="calc-check w-5 h-5 text-primary-600 rounded">
+          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+            <input type="checkbox" value="280000" data-name="Contabilidad General" class="calc-check w-5 h-5 text-blue-500 rounded">
             <div class="flex-1">
-              <span class="font-medium">Contabilidad General</span>
-              <span class="block text-sm text-slate-500">Desde $1,800 MXN / mes</span>
+              <span class="font-medium text-white">Contabilidad General</span>
+              <span class="block text-sm text-slate-400">Desde $280.000 COP / mes</span>
             </div>
           </label>
-          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 cursor-pointer transition">
-            <input type="checkbox" value="1200" data-name="Impuestos y Declaraciones" class="calc-check w-5 h-5 text-primary-600 rounded">
+          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+            <input type="checkbox" value="180000" data-name="Impuestos y Declaraciones" class="calc-check w-5 h-5 text-blue-500 rounded">
             <div class="flex-1">
-              <span class="font-medium">Impuestos y Declaraciones</span>
-              <span class="block text-sm text-slate-500">Desde $1,200 MXN / mes</span>
+              <span class="font-medium text-white">Impuestos y Declaraciones</span>
+              <span class="block text-sm text-slate-400">Desde $180.000 COP / mes</span>
             </div>
           </label>
-          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 cursor-pointer transition">
-            <input type="checkbox" value="3500" data-name="Auditoría" class="calc-check w-5 h-5 text-primary-600 rounded">
+          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+            <input type="checkbox" value="850000" data-name="Auditoría" class="calc-check w-5 h-5 text-blue-500 rounded">
             <div class="flex-1">
-              <span class="font-medium">Auditoría</span>
-              <span class="block text-sm text-slate-500">Desde $3,500 MXN (por proyecto)</span>
+              <span class="font-medium text-white">Auditoría</span>
+              <span class="block text-sm text-slate-400">Desde $850.000 COP (por proyecto)</span>
             </div>
           </label>
-          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 cursor-pointer transition">
-            <input type="checkbox" value="1500" data-name="Asesoría Fiscal" class="calc-check w-5 h-5 text-primary-600 rounded">
+          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+            <input type="checkbox" value="220000" data-name="Asesoría Fiscal" class="calc-check w-5 h-5 text-blue-500 rounded">
             <div class="flex-1">
-              <span class="font-medium">Asesoría Fiscal</span>
-              <span class="block text-sm text-slate-500">Desde $1,500 MXN / mes</span>
+              <span class="font-medium text-white">Asesoría Fiscal</span>
+              <span class="block text-sm text-slate-400">Desde $220.000 COP / mes</span>
             </div>
           </label>
-          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 cursor-pointer transition">
-            <input type="checkbox" value="4500" data-name="Constitución de Sociedades" class="calc-check w-5 h-5 text-primary-600 rounded">
+          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+            <input type="checkbox" value="1500000" data-name="Constitución de Sociedades" class="calc-check w-5 h-5 text-blue-500 rounded">
             <div class="flex-1">
-              <span class="font-medium">Constitución de Sociedades</span>
-              <span class="block text-sm text-slate-500">Desde $4,500 MXN (una vez)</span>
+              <span class="font-medium text-white">Constitución de Sociedades</span>
+              <span class="block text-sm text-slate-400">Desde $1.500.000 COP (una vez)</span>
             </div>
           </label>
-          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 cursor-pointer transition">
-            <input type="checkbox" value="1600" data-name="Nómina" class="calc-check w-5 h-5 text-primary-600 rounded">
+          <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-700 hover:bg-slate-800 cursor-pointer transition">
+            <input type="checkbox" value="200000" data-name="Nómina" class="calc-check w-5 h-5 text-blue-500 rounded">
             <div class="flex-1">
-              <span class="font-medium">Nómina y RH</span>
-              <span class="block text-sm text-slate-500">Desde $1,600 MXN / mes</span>
+              <span class="font-medium text-white">Nómina y RH</span>
+              <span class="block text-sm text-slate-400">Desde $200.000 COP / mes</span>
             </div>
           </label>
         </div>
 
-        <div class="bg-primary-50 dark:bg-primary-900/30 rounded-xl p-6 text-center">
-          <p class="text-sm text-slate-600 dark:text-slate-300 mb-1">Estimación aproximada</p>
-          <p class="text-3xl md:text-4xl font-bold text-primary-700 dark:text-primary-300" id="estimate-result">$0 MXN</p>
+        <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 text-center">
+          <p class="text-sm text-slate-400 mb-1">Estimación aproximada</p>
+          <p class="text-3xl md:text-4xl font-bold text-blue-400" id="estimate-result">$0 COP</p>
           <p class="text-xs text-slate-500 mt-2">*Los precios son referenciales. El costo final se confirma según el volumen y complejidad de tu caso.</p>
         </div>
 
@@ -348,77 +352,77 @@
   </section>
 
   <!-- PROCESO -->
-  <section id="proceso" class="py-20">
+  <section id="proceso" class="py-20 bg-slate-950">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Cómo trabajamos?</h2>
-        <p class="text-slate-600 dark:text-slate-300">Proceso simple, transparente y 100% digital.</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">¿Cómo trabajamos?</h2>
+        <p class="text-slate-400">Proceso simple, transparente y 100% digital.</p>
       </div>
       <div class="grid md:grid-cols-4 gap-6">
         <div class="text-center">
-          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/40 text-primary-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-          <h3 class="font-bold mb-2">Contacto por WhatsApp</h3>
-          <p class="text-sm text-slate-600 dark:text-slate-300">Me escribes, me cuentas tu situación y te doy una orientación inicial gratuita.</p>
+          <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border border-blue-500/30">1</div>
+          <h3 class="font-bold mb-2 text-white">Contacto por WhatsApp</h3>
+          <p class="text-sm text-slate-400">Me escribes, me cuentas tu situación y te doy una orientación inicial gratuita.</p>
         </div>
         <div class="text-center">
-          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/40 text-primary-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-          <h3 class="font-bold mb-2">Diagnóstico</h3>
-          <p class="text-sm text-slate-600 dark:text-slate-300">Revisamos documentos y definimos el alcance exacto de los servicios que necesitas.</p>
+          <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border border-blue-500/30">2</div>
+          <h3 class="font-bold mb-2 text-white">Diagnóstico</h3>
+          <p class="text-sm text-slate-400">Revisamos documentos y definimos el alcance exacto de los servicios que necesitas.</p>
         </div>
         <div class="text-center">
-          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/40 text-primary-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-          <h3 class="font-bold mb-2">Propuesta clara</h3>
-          <p class="text-sm text-slate-600 dark:text-slate-300">Recibes una cotización transparente sin sorpresas ni costos ocultos.</p>
+          <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border border-blue-500/30">3</div>
+          <h3 class="font-bold mb-2 text-white">Propuesta clara</h3>
+          <p class="text-sm text-slate-400">Recibes una cotización transparente sin sorpresas ni costos ocultos.</p>
         </div>
         <div class="text-center">
-          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/40 text-primary-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
-          <h3 class="font-bold mb-2">Ejecución y seguimiento</h3>
-          <p class="text-sm text-slate-600 dark:text-slate-300">Trabajamos mes a mes con reportes y comunicación constante por WhatsApp.</p>
+          <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border border-blue-500/30">4</div>
+          <h3 class="font-bold mb-2 text-white">Ejecución y seguimiento</h3>
+          <p class="text-sm text-slate-400">Trabajamos mes a mes con reportes y comunicación constante por WhatsApp.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="py-20 bg-slate-100 dark:bg-slate-800/50">
+  <section id="faq" class="py-20 bg-slate-900/50">
     <div class="max-w-3xl mx-auto px-4">
       <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Preguntas Frecuentes</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Preguntas Frecuentes</h2>
       </div>
       <div class="space-y-4" id="faq-list">
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-50 dark:hover:bg-slate-700/50 transition">
+        <div class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-800 transition text-white">
             ¿Cuánto tarda en responder por WhatsApp?
             <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-answer px-6 text-slate-600 dark:text-slate-300 text-sm">
+          <div class="faq-answer px-6 text-slate-400 text-sm">
             <p class="pb-4">Normalmente respondo en menos de 2 horas en horario laboral. Fuera de horario, al siguiente día hábil.</p>
           </div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-50 dark:hover:bg-slate-700/50 transition">
+        <div class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-800 transition text-white">
             ¿Los precios de la calculadora son definitivos?
             <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-answer px-6 text-slate-600 dark:text-slate-300 text-sm">
+          <div class="faq-answer px-6 text-slate-400 text-sm">
             <p class="pb-4">Son rangos de referencia. El precio final se ajusta según el volumen de operaciones, número de empleados y complejidad de tu caso.</p>
           </div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-50 dark:hover:bg-slate-700/50 transition">
-            ¿Trabajas con personas físicas y empresas?
+        <div class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-800 transition text-white">
+            ¿Trabajas con personas naturales y empresas?
             <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-answer px-6 text-slate-600 dark:text-slate-300 text-sm">
-            <p class="pb-4">Sí. Atiendo profesionistas independientes, freelancers, personas físicas con actividad empresarial y sociedades de todos los tamaños.</p>
+          <div class="faq-answer px-6 text-slate-400 text-sm">
+            <p class="pb-4">Sí. Atiendo profesionistas independientes, freelancers, personas naturales con actividad económica y sociedades de todos los tamaños.</p>
           </div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-50 dark:hover:bg-slate-700/50 transition">
+        <div class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-slate-800 transition text-white">
             ¿Puedo cambiar de contador fácilmente?
             <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-answer px-6 text-slate-600 dark:text-slate-300 text-sm">
+          <div class="faq-answer px-6 text-slate-400 text-sm">
             <p class="pb-4">Por supuesto. Te ayudo con la transición de información y hago que el cambio sea lo más ordenado y sin estrés posible.</p>
           </div>
         </div>
@@ -426,11 +430,11 @@
     </div>
   </section>
 
-  <!-- CONTACTO / CTA FINAL -->
-  <section id="contacto" class="py-20">
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 bg-slate-950">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para tener tus finanzas en orden?</h2>
-      <p class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">¿Listo para tener tus finanzas en orden?</h2>
+      <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
         Escríbeme por WhatsApp y platiquemos de tu caso. La primera orientación es sin costo.
       </p>
       <a href="https://wa.me/573158394665?text=Hola%2C%20vengo%20del%20portafolio%20y%20quiero%20agendar%20una%20consulta" 
@@ -444,14 +448,14 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-300 py-10">
+  <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-10">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <p class="font-semibold text-white mb-2">Néstor Ramos</p>
       <p class="text-sm mb-4">Contador Público · Servicios contables y fiscales de confianza</p>
       <div class="flex justify-center gap-6 mb-6">
         <a href="https://wa.me/573158394665" target="_blank" class="hover:text-green-400 transition text-xl"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <p class="text-xs text-slate-500">© 2026 Néstor Ramos · Todos los derechos reservados</p>
+      <p class="text-xs text-slate-600">© 2026 Néstor Ramos · Todos los derechos reservados</p>
     </div>
   </footer>
 
@@ -464,19 +468,6 @@
   </a>
 
   <script>
-    // Theme toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-    
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      html.classList.add('dark');
-    }
-    
-    themeToggle.addEventListener('click', () => {
-      html.classList.toggle('dark');
-      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
-    });
-
     // Service cards expand
     document.querySelectorAll('.toggle-details').forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -498,12 +489,8 @@
     // Filters
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => {
-          b.classList.remove('active', 'bg-primary-600', 'text-white');
-          b.classList.add('bg-slate-200', 'dark:bg-slate-700');
-        });
-        btn.classList.add('active', 'bg-primary-600', 'text-white');
-        btn.classList.remove('bg-slate-200', 'dark:bg-slate-700');
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
         
         const filter = btn.dataset.filter;
         document.querySelectorAll('.service-card').forEach(card => {
@@ -532,13 +519,13 @@
       });
       
       resultEl.textContent = total > 0 
-        ? \[ {total.toLocaleString('es-MX')} MXN 
-        : '$0 MXN';
+        ? `\[ {total.toLocaleString('es-CO')} COP` 
+        : '$0 COP';
       
       let msg = 'Hola, revisé la calculadora del portafolio y me interesa cotizar: ';
       msg += selected.length ? selected.join(', ') : 'varios servicios';
-      msg += . Estimación aproximada: \]{total.toLocaleString('es-MX')} MXN.;
-      whatsappEstimate.href = https://wa.me/573158394665?text=${encodeURIComponent(msg)};
+      msg += `. Estimación aproximada: \]{total.toLocaleString('es-CO')} COP.`;
+      whatsappEstimate.href = `https://wa.me/573158394665?text=${encodeURIComponent(msg)}`;
     }
 
     checks.forEach(c => c.addEventListener('change', updateEstimate));
@@ -550,7 +537,6 @@
         const icon = btn.querySelector('i');
         const isOpen = answer.classList.contains('open');
         
-        // Close all
         document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
         document.querySelectorAll('.faq-question i').forEach(i => i.classList.remove('rotate-180'));
         
